@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Qcm</title>
+    <link rel="icon" href="images/logo2.png" type="image/png">
+    <link rel="stylesheet" href="Acc.css">
+    <script>
+        window.history.pushState(null, document.title, window.location.href);
+        window.addEventListener('popstate', function () {
+            window.history.pushState(null, document.title, window.location.href);
+        });
+    </script>
+    <style>
+    .text{
+        font-size: 17px;
+        
+    }
+    .acceuil{
+        background-color: white;
+    }
+    .fct{
+        background-color: #f3e6cae1;
+    }
+    .support{background-color: white;}
+    .features{
+        color: white;
+        background-color: black;
+    }
+    header{
+        width: 100%; /* Largeur pleine */
+        position: fixed; /* Position fixe */
+        background-color: black;
+        text-align: center;
+        align-items: center;
+        z-index: 1000; /* Profondeur z pour assurer la superposition */
+    }
+    main {
+  margin-top: 60px; /* Marge supérieure pour le contenu principal, égale à la hauteur de l'en-tête */
+}
+    footer{
+            background-color: black;
+            color: white;
+        }
+
+    #junia:hover{
+            color: white;cursor: pointer;
+        }
+
+    #junia:active{
+            color:#D1000A;cursor: pointer;
+        }
+
+    .style{
+            color: white;
+        }
+
+    .but{
+        background-color: #D1000A;
+        color: white;
+        }
+    .but:hover{
+            background-color:#a9030b;
+            color: white;
+        }
+    .but:active{
+            color: white;
+        }
+    .btn:active{
+            background-color: black;
+        }
+    a:hover{
+            color: #D1000A;
+        } 
+    .bouton {
+        background-color: black;
+        color:white
+    }   
+    .bouton:hover{
+        background-color:#D1000A;
+        color:white
+    }
+    .bouton:active{
+        background-color: black;
+    }
+    .bouton2 {
+        background-color:#D1000A;
+        color:white
+    }   
+    .bouton2:hover{
+        background-color:black;
+        color:white
+    }
+    .bouton2:active{
+        background-color:#D1000A;
+    }
+    hr{
+        color: black;
+    
+    }
+    </style>
+</head>
+<body>
+    <header>
+    <nav class="navbar navbar-expand-lg ">
+            
+        <img alt="logo du site" class="img-fluid" height="" src="images/logo.png" width="150"><label>&nbsp;&nbsp;</label>
+        <div class="collapse navbar-collapse my-2 my-lg-0" id="navbarSupportedContent3">
+            <ul class="navbar-nav  ms-lg">
+                <li class="nav-item ms-lg-3">
+                    <a class="nav-link" href="#acceuil"><label class="text">Acceuil</label></a>
+                </li>
+                <li class="nav-item ms-lg-3">
+                    <a class="nav-link" href="#features"><label class="text">Nos fonctionnalités</label></a>
+                </li>
+                <li class="nav-item ms-lg-4">
+                    <a class="nav-link" href="#fct"><label class="text">Comment ça fonctionne</label></a>
+                </li>
+                
+                <li class="nav-item ms-lg-4">
+                    <a class="nav-link" href="#support"><label class="text">Contact</label></a>
+                </li>
+                <label>&nbsp;&nbsp;&nbsp;</label>
+                <li class="nav-item  ms-lg d-none d-md-block my-lg-2">
+                    <a class="btn bouton2" href="loginp.php">Se connecter</a>
+                </li>
+            </ul>
+        </div>
+  
+    </nav>
+    </header>
+
+<div class="acceuil" id="acceuil">
+    <section class="py">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <div class="pe-lg-3">
+                        <h2 class="display-4 fw-bold mb-2 mb-md-3">5x moins de temps consacré à l'évaluation<br> des élèves</h2>
+                        <p class="lead mb-4">Automatiser, digitaliser comme autres organismes de formation qui utilisent Quick-qcm, votre création et correction de qcm ( soit sur papier ou plateforme ), gestion des notes des éleves, et bien plus.</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <div class="d-flex">
+                                <div class="flex-shrink-0">
+                                    <div class="text-primary">
+                                        <svg class="bi bi-chat-right-fill" fill="currentColor" height="32" viewbox="0 0 16 16" width="32" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14 0a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12z"></path></svg>
+                                    </div>
+                                </div>
+                                <div class="ms-3">
+                                    <h6 class="mb-0">24/7</h6>
+                                    <p>Service client</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex">
+                                <div class="text-primary">
+                                    <svg class="bi bi-shield-fill-check" fill="currentColor" height="32" viewbox="0 0 16 16" width="32" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm2.146 5.146a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647z" fill-rule="evenodd"></path></svg>
+                                </div>
+                                <div class="ms-3">
+                                    <h6 class="mb-0">99.99%</h6>
+                                    <p>Garantie de disponibilité</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="ps-lg-5">
+                        <div class="card shadow-lg border border-primary text-white text-left h-100">
+                            <div class="card-body bg-primary p-4 p-xl-5">
+                                <h2 class="pb-3 text-center">Inscrivez-vous sur notre plateforme - Commencez dès aujourd'hui !</h2>
+                                <form>
+                                    <div class="mb-3">
+                                        <label class="form-label" for="name">Nom et prénom</label> <input class="form-control" id="name" type="text">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label" for="email">Email</label> <input class="form-control" id="email" type="email">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label" for="phone">Téléphone</label> <input class="form-control" id="phone" type="number">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label" for="organismname">Nom d'organisme de formation</label> <input class="form-control" id="organismname" type="text">
+                                    </div>
+                                    <button class="btn bouton" type="submit">Étape suivante</button>
+            
+                                </form>
+                            </div>
+                        </div><br><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+<div class="features" id="features">
+<section class="py-5">
+	<div class="container">
+		<div class="row justify-content-center text-center mb-3">
+			<div class="col-lg-8 col-xl-7">
+			
+				<h2 class="display-5 fw-bold">Nos fonctionnalités</h2>
+				<p class="lead">Découvrez les principaux fonctionnalités de notre plateforme conçues pour simplifier l'évaluation des apprenants au sein de votre organisme de formation.</p><br><label>&nbsp;</label>
+			</div>
+		</div>
+		<div class="row g-4 g-md-5">
+			<div class="col-md-6">
+				<div class="d-flex">
+					<div class="text-primary me-4"><svg class="bi bi-layout-text-window-reverse" fill="currentColor" height="32" viewbox="0 0 16 16" width="32" xmlns="http://www.w3.org/2000/svg">
+						<path d="M13 6.5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 .5-.5zm0 3a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 .5-.5zm-.5 2.5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1h5z"></path>
+						<path d="M14 0a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12zM2 1a1 1 0 0 0-1 1v1h14V2a1 1 0 0 0-1-1H2zM1 4v10a1 1 0 0 0 1 1h2V4H1zm4 0v11h9a1 1 0 0 0 1-1V4H5z"></path></svg>
+					</div>
+					<div>
+						<h5 class="mb-2 mb-lg-3 fw-bold">Creation de QCM en ligne</h5>
+						<p>Créer des QCM en ligne rapidement et simplement. Vous pouvez ensuite choisir de les télécharger et de les imprimer pour une distribution en classe, ou bien de les publier directement sur notre plateforme, offrant ainsi aux étudiants la possibilité de les compléter en ligne après s'être connectés.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="d-flex">
+					<div class="text-primary me-4">
+                        <svg class="bi bi-clipboard-check" fill="currentColor" height="32" viewbox="0 0 16 16" width="32" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z" fill-rule="evenodd"></path>
+                            <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"></path>
+                            <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"></path></svg>
+                        
+						</div>
+					<div>
+						<h5 class="mb-2 mb-lg-3 fw-bold">Gestion des notes</h5>
+						<p>Centralisez la gestion des notes. Stockez automatiquement les résultats des évaluations aprés correction, organisés selon le profil de chaque apprenant. Utilisez notre système pour envoyer des e-mails personnalisés avec les notes après la correction automatisée, assurant ainsi une communication efficace et individualisée des résultats.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="d-flex">
+					<div class="text-primary me-4">
+						<svg class="bi bi-aspect-ratio" fill="currentColor" height="32" viewbox="0 0 16 16" width="32" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 3.5A1.5 1.5 0 0 1 1.5 2h13A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5v-9zM1.5 3a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-13z"></path>
+                            <path d="M2 4.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1H3v2.5a.5.5 0 0 1-1 0v-3zm12 7a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1 0-1H13V8.5a.5.5 0 0 1 1 0v3z"></path></svg>
+                    </div>
+					<div>
+						<h5 class="mb-2 mb-lg-3 fw-bold">Correction de QCM en ligne</h5>
+						<p>Corrigez facilement vos QCM en ligne. Pour les questionnaires sur papier, scannez simplement la page de réponses et utilisez notre système de traitement d'image intégré. Pour ceux en ligne, laissez notre système automatique prendre en charge la correction, garantissant ainsi une évaluation précise et rapide.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="d-flex">
+					<div class="text-primary me-4">
+						<svg class="bi bi-emoji-wink" fill="currentColor" height="32" viewbox="0 0 16 16" width="32" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                            <path d="M4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm1.757-.437a.5.5 0 0 1 .68.194.934.934 0 0 0 .813.493c.339 0 .645-.19.813-.493a.5.5 0 1 1 .874.486A1.934 1.934 0 0 1 10.25 7.75c-.73 0-1.356-.412-1.687-1.007a.5.5 0 0 1 .194-.68z"></path></svg>
+                        </div>
+					<div>
+						<h5 class="mb-2 mb-lg-3 fw-bold">Chatbot assistant</h5>
+						<p>Utilisez notre fonctionnalité de chatbot assistant pour améliorer la création de vos QCM. Commencez par sélectionner les bonnes questions pour votre évaluation. Ensuite, laissez-le vous proposer des réponses fausses et vraies, garantissant ainsi une évaluation approfondie et précise de vos apprenants</p>
+					</div>
+				</div><br><br><label>&nbsp;</label>
+			</div>
+		</div>
+	</div>
+</section> 
+</div>   
+
+<div id="fct"class="fct">
+<section class="py-5">
+	<div class="container">
+		<div class="row justify-content-center text-center mb-4">
+			<div class="col-lg-8 col-xxl-7">
+				<h2 class=" fw-bold"><span style="color:#D1000A;font-size:27px;">QCM sur papier</span></h2>
+				<h2 class="display-5 fw-bold">Comment ça fonctionne</h2>
+				<p class="lead">Les professeurs peuvent créer des QCM en ligne et les imprimer pour distribution aux étudiants. Une fois que les étudiants ont rempli les QCM, les professeurs peuvent utiliser notre plateforme pour les corriger à l'aide d'un système de scan intégré.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3">
+				<div class="text-center position-relative">
+					<div class="step-icon mx-auto bg-primary border rounded-circle d-flex align-items-center justify-content-center" style="width:120px;height:120px;">
+						<svg class="w-[48px] h-[48px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" viewBox="0 0 24 24">
+                            <path stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 5V4a1 1 0 0 0-1-1H8.914a1 1 0 0 0-.707.293L4.293 7.207A1 1 0 0 0 4 7.914V20a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-5M9 3v4a1 1 0 0 1-1 1H4m11.383.772 2.745 2.746m1.215-3.906a2.089 2.089 0 0 1 0 2.953l-6.65 6.646L9 17.95l.739-3.692 6.646-6.646a2.087 2.087 0 0 1 2.958 0Z"/>
+                          </svg>
+                          
+                          </div>
+					<h4 class="mt-3 fs-5">Créer le QCM</h4>
+					<div class="arrow-icon position-absolute d-none d-lg-block" style="top:50px; right:-25px">
+						<svg class="bi bi-arrow-right" fill="currentColor" height="30" viewbox="0 0 16 16" width="30" xmlns="http://www.w3.org/2000/svg">
+						<path d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" fill-rule="evenodd"></path></svg>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="text-center position-relative">
+					<div class="step-icon mx-auto bg-primary border rounded-circle d-flex align-items-center justify-content-center" style="width: 120px;height: 120px;">
+						<svg class="w-[48px] h-[48px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" viewBox="0 0 24 24">
+                            <path stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 17v-5h1.5a1.5 1.5 0 1 1 0 3H5m12 2v-5h2m-2 3h2M5 10V7.914a1 1 0 0 1 .293-.707l3.914-3.914A1 1 0 0 1 9.914 3H18a1 1 0 0 1 1 1v6M5 19v1a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-1M10 3v4a1 1 0 0 1-1 1H5m6 4v5h1.375A1.627 1.627 0 0 0 14 15.375v-1.75A1.627 1.627 0 0 0 12.375 12H11Z"/>
+                          </svg>
+                          </div>
+					<h4 class="mt-3 fs-5">Telecharger et imprimer le QCM</h4>
+					
+					<div class="arrow-icon d-none d-lg-block position-absolute" style="top:50px; right:-25px">
+						<svg class="bi bi-arrow-right" fill="currentColor" height="30" viewbox="0 0 16 16" width="30" xmlns="http://www.w3.org/2000/svg">
+						<path d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" fill-rule="evenodd"></path></svg>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="text-center position-relative">
+					<div class="step-icon mx-auto bg-primary border rounded-circle d-flex align-items-center justify-content-center" style="width: 120px;height: 120px;">
+						<svg class="w-[48px] h-[48px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" viewBox="0 0 24 24">
+                            <path stroke="white" stroke-linejoin="round" stroke-width="2" d="M4 18V8a1 1 0 0 1 1-1h1.5l1.707-1.707A1 1 0 0 1 8.914 5h6.172a1 1 0 0 1 .707.293L17.5 7H19a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1Z"/>
+                            <path stroke="white" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
+                          </svg>
+                          </div>
+					<h4 class="mt-3 fs-5">Scanner la feuille de reponse</h4>
+					
+					<div class="arrow-icon d-none d-lg-block position-absolute" style="top:50px; right:-25px">
+						<svg class="bi bi-arrow-right" fill="currentColor" height="30" viewbox="0 0 16 16" width="30" xmlns="http://www.w3.org/2000/svg">
+						<path d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" fill-rule="evenodd"></path></svg>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="text-center position-relative">
+					<div class="step-icon mx-auto bg-primary border rounded-circle d-flex align-items-center justify-content-center" style="width: 120px;height: 120px;">
+						<svg class="w-[48px] h-[48px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" viewBox="0 0 24 24">
+                            <path stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12V7.914a1 1 0 0 1 .293-.707l3.914-3.914A1 1 0 0 1 9.914 3H18a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-4m5-13v4a1 1 0 0 1-1 1H5m0 6h9m0 0-2-2m2 2-2 2"/>
+                          </svg>
+                          </div>
+					<h4 class="mt-3 fs-5">Importer l'image pour correction</h4>
+				</div>
+			</div><br><label>&nbsp;</label><br><label>&nbsp;</label><br><br>
+		</div>
+    </div>
+</section>
+</div>
+
+
+
+       
+
+
+
+
+
+
+<div id="support">
+        <section class="py-5">
+            <div class="container">
+                <div class="row justify-content-center text-center">
+                    <div class="col-lg-8 col-xxl-7">
+                        <br><h2 class="display-5  fw-bold md-3">Contactez nous !</h2>
+                        <p class="lead">N'hésitez pas à nous contacter si vous rencontrez des problèmes avec la plateforme, ou si vous avez des messages à nous transmettre. Votre retour est précieux pour nous aider à améliorer notre service et à répondre au mieux à vos besoins.</p>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-10 col-lg-6 mt-2">
+                        <form><br>
+                            <div class="row justify-content-center">
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <input class="form-control bg-light" placeholder="First name" type="text">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <input class="form-control bg-light" placeholder="Last name" type="text">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="mb-3">
+                                        <input class="form-control bg-light" placeholder="Email address" type="text">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="mb-3">
+                                        <textarea class="form-control bg-light" placeholder="Your message" rows="4"></textarea><br>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="d-grid">
+                                        <button class="btn bouton" type="submit">Send message</button><br><br><br>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+</div>
+
+<footer class="py-4">
+    <div class="container">
+        <div class="row pt-4 mb-4 mb-lg-5">
+            <div class="col-12 col-lg-3 pe-lg-0 mb-4 mb-lg-0">
+                <img alt="Free Frontend Logo" class="img-fluid mb-3" height="" src="images/logo.png" width="200">
+                <p class="small text-muted mb-3">Inscrivez votre adresse e-mail si vous voulez recevoir les dernières mises à jour sur les fonctionnalités et les versions.</p>
+                <div class="input-group">
+                    <input class="form-control bg-light" placeholder="Adresse Email" type="text"> <button class="btn but py-2" type="button">Subscribe</button>
+                </div>
+            </div>
+            <div class="col-12 col-lg-2"></div>
+            <div class="col-6 col-lg-2">
+                <ul class="list-unstyled">
+                    <li class="nav-item">
+                        <a class="style text-decoration-none" href="profil.html">Profil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="style text-decoration-none" href="Acc.php">Acceuil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="style text-decoration-none" href="Creation.html">Creer Qcm</a>
+                    </li>
+                    <li class="style nav-item">
+                        <a class="style text-decoration-none" href="Correction.html">Corriger Qcm</a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div class="col-6 col-lg-2">
+                <ul class="list-unstyled">
+                    <li class="nav-item">
+                        <a class="style text-decoration-none" href="#features">Resultats Qcm</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="style text-decoration-none" href="#features">Historique Qcm</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="style text-decoration-none" href="#about">À propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="style text-decoration-none" href="contact_us.html">Contact</a>
+                    </li>
+                    
+
+                </ul>
+            </div>
+            <div class="col-12 col-lg-1"></div>
+            <div class="col-12 col-lg-2 small mt-4 mt-lg-0">
+                <ul class="list-unstyled">
+                    <li class="nav-item">
+                        <a class="style text-decoration-none" href=""><svg class="w-[17px] h-[17px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="20" fill="currentColor" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd" d="M13.135 6H15V3h-1.865a4.147 4.147 0 0 0-4.142 4.142V9H7v3h2v9.938h3V12h2.021l.592-3H12V6.591A.6.6 0 0 1 12.592 6h.543Z" clip-rule="evenodd"/>
+                          </svg>
+                          
+                          
+                          Facebook</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="style text-decoration-none" href=""><svg class="w-[17px] h-[17px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="20" fill="currentColor" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd" d="M12.51 8.796v1.697a3.738 3.738 0 0 1 3.288-1.684c3.455 0 4.202 2.16 4.202 4.97V19.5h-3.2v-5.072c0-1.21-.244-2.766-2.128-2.766-1.827 0-2.139 1.317-2.139 2.676V19.5h-3.19V8.796h3.168ZM7.2 6.106a1.61 1.61 0 0 1-.988 1.483 1.595 1.595 0 0 1-1.743-.348A1.607 1.607 0 0 1 5.6 4.5a1.601 1.601 0 0 1 1.6 1.606Z" clip-rule="evenodd"/>
+                            <path d="M7.2 8.809H4V19.5h3.2V8.809Z"/>
+                          </svg>
+                          
+                          Linkedin</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="style text-decoration-none" href=""><svg class="w-[17px] h-[17px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="20" fill="currentColor" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd" d="M22 5.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.343 8.343 0 0 1-2.605.981A4.13 4.13 0 0 0 15.85 4a4.068 4.068 0 0 0-4.1 4.038c0 .31.035.618.105.919A11.705 11.705 0 0 1 3.4 4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 6.1 13.635a4.192 4.192 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 2 18.184 11.732 11.732 0 0 0 8.291 20 11.502 11.502 0 0 0 19.964 8.5c0-.177 0-.349-.012-.523A8.143 8.143 0 0 0 22 5.892Z" clip-rule="evenodd"/>
+                          </svg>
+                          
+                          Twiter</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="border-top d-lg-none"></div>
+        <div class="d-block d-lg-flex justify-content-between py-3 py-lg-2">
+            <div class="small mb-2 mb-lg-0 text-muted">
+                © 2024 Quick qcm - Tous droits réservés || Designed By :  <a id="junia"href="https://www.linkedin.com/in/walid-nassir-elhak-0a4870224/"><label> @Walid Nassir ElHak</label></a>
+                -    <a id="junia"href="https://www.linkedin.com/in/ilias-zaki-b5841a226/"><label>@Ilias Zaki</label></a>    -    <a id="junia"href="https://www.linkedin.com/in/younes-kharbach-b2a772225/"><label>Younes Kharbach </label></a>
+                
+            </div>
+            <div class="small">
+                <a class=" d-block d-lg-inline text-muted ms-lg-2 mb-2 mb-lg-0" href="">Privacy Policy</a> <a class="d-block d-lg-inline text-muted ms-lg-2" href="">Terms of Service</a>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
